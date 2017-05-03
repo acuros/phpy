@@ -3,7 +3,6 @@ try:
 except ImportError:
     import json
 from subprocess import Popen, PIPE
-from exceptions import *
 
 
 class PHP:
