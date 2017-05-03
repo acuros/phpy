@@ -6,6 +6,3 @@ __version__ = "0.1"
 __authors__ = [
     "Kyoung-chan LEE <me@leekchan.com>",
 ]
-
-import php
-PHP = php.PHP
