@@ -54,7 +54,7 @@ class PHP:
         if (type(arguments)) != list and arguments:
             raise InvalidType
         p = Popen('php', stdin=PIPE, stdout=PIPE, stderr=PIPE)
-        content = '<?php\ninclude \'{}\';\n{}({});?>'.format(
+        content = '<?php\ninclude \'{}\';\n@{}({});?>'.format(
             self.__escape(self.file_path), function_name, self.__join_arguments(arguments)
         )
         p.stdin.write(content.encode('utf8'))
